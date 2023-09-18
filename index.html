@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<linK href="/css.css"></link>
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<style>
+  #Top_nav{  
+    background-color:#daac00 ;
+    font-size: 30px;
+    padding-left: 8%;
+      padding-right: 8%;
+  }
+  #name{
+    padding-left: 50px;
+  }
+  #searchbox{
+    background-color: #fcc302;
+  color: aliceblue;
+  border: 0px;
+  border-radius: 0%;
+  box-shadow: 5px 5px 5px black;
+  position: relative;
+  }
+   #searchbutton{
+    /* position relative k baad h left ya right use kar skte hai */
+    position: relative;
+    right: 4px;
+    background-color: blue;
+     border: 0px;
+  border-radius: 0%;
+  }
+  #searchbox::placeholder{
+    color: aliceblue;
+  }
+
+
+
+  #imgg{
+height: 80px;
+width: 300px;
+}  
+
+  @media(max-width:768px){
+#mainsearch{
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+  }
+    @media(max-width:471px){
+    #imgg {
+width: 100px;
+height: 50px;
+}  
+
+/* banner */
+    }
+    #banner{
+        background-color:rgb(255, 213, 0);
+        padding-top: 20px;
+    }
+#bannertext h1{
+color: aliceblue;
+padding-top: 80px;
+}
+#bannertext p{
+color: aliceblue;
+font-size: 25px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.btn1{
+        border: 2px;
+        border-style: solid;
+  border-radius: 10%;
+  color: white;
+}
+
+.btn2{
+        border: 2px;
+        border-style: solid;
+  border-radius: 10%;
+  color: white;
+}
+@media(max-width:1153px){
+  #h1{ font-size: 35px;
+}
+}
+
+@media(max-width:517px){
+  #h1{ font-size: 25px;
+}
+
+}
+
+#service-text{
+    padding-top: 10%;
+}
+#service-btn{
+color: aliceblue;
+background-color: #fcc302;
+border: 2px;
+border-style: solid;
+border-color: black;
+}
+#service-img{
+       padding-top: 10%;
+      height: 600px;
+}
+@media(max-width:856px){
+.service-h1{
+    font-size: 30px;
+}
+}
+@media(max-width:310px){
+.service-h1{
+    font-size: 20px;
+}
+}
+/* counter */
+#counter{
+    background-image: url(/download\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-position: center;
+}
+.s{
+    font-size: 100px;
+}
+@media(max-width:767px){
+  .s{
+    font-size: 50px;
+}  
+}
+
+
+#blog{
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.blog-title{
+    font-size: 50px;
+    font-weight: bolder;
+}
+#blog p{
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+.artical-details{
+  border-style: solid;
+  border-radius: 1px;
+  border-color: gray;
+  border-top: 0px;
+
+}
+.artical-date 
+{
+    color: aqua;
+}
+.article-link
+{
+    color: aqua; 
+    text-decoration: none;
+    
+}
+/* footer */
+
+#footer{
+    background-color: #343434;
+    padding-top: 80px;
+padding-bottom: 80px;
+}
+#footer-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer-search-box{
+    background-color: #fcc302;
+    color: white;
+    border:0px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    left: 10px;
+}
+#footer-search-submit{
+    background-color: #00bec9;
+    color: white;
+    border: 0;
+      padding: 10px;
+}
+.social-icon{
+    font-size: 30px;
+    color: white;
+}
+@media(max-width:240px){
+      #footer-search-box{
+
+    padding: 10px;
+    width: 60%;
+ 
+
+}
+}
+@media(max-width:1348px){
+      #footer-search-box{
+
+    padding: 10px;
+    width: 60%;
+ 
+
+}
+}
+</style>
+<body>
+<nav class="navbar navbar-expand-lg" id="Top_nav">
+    <div class="container-fluid">
+        <img class="navbar-brand img-fluid" src="download (1).png" id="imgg"></img>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="name">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#"  id="name">Home</a>
+                </li>
+              <li class="nav-item">
+               <a class="nav-link text-white "  id="name">About</a>
+                   </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white"  id="name">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white "  id="name">Services</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" id="mainsearch">
+                <input class="form-control me-2 text-white" type="search" placeholder="Search..." aria-label="Search" id="searchbox">
+                <button class="btn btn-outline-success" type="submit" id="searchbutton"><i class="bi bi-search text-white"></i></button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <!-- banner -->
+    <div class="row justify-content-evenly" id="banner">
+    <div class="col-md-6 " id="bannertext">
+        <h1 id="h1">First i want to be a veterinarian</h1>
+        <p id="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem aspernatur voluptates odio ipsa voluptate veritatis animi molestias, cumque et magnam cupiditate, earum quasi labore aut eveniet autem, odit minus.</p>
+        <button class="bg-info btn btn1">Contact</button>
+        <button class=" text-white btn btn2">Our Services</button>
+    </div>
+        <img id="bannerimg" src="/funny-worried-dog-s-face-isolated-yellow-background-funny-worried-dog-s-face-isolated-yellow-background-201246596.jpg" class="col-md-4 img-fluid d-none d-md-block"></img>
+  </div>
+
+  <!-- services -->
+<diV class="row justify-content-evenly" >
+    <div class="col-md-5 " id="service-text">
+ <h1 class="service-h1">As a veterinarian and <br> Love of animals</h1>
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ab beatae tenetur recusandae reprehenderit, minima voluptate vel quo soluta similique commodi illo, dolorum consequuntur nihil necessitatibus eligendi accusamus maiores saepe!</p>
+ <button type="button" class="btn service-btn" id="service-btn">Our service</button>
+    </div>
+    <img class="col-md-5 img-fluid d-none d-md-block" id="service-img" src="/friends-3042751_1920-1.jpg" >
+    </img>
+</diV>
+
+
+<!-- counter -->
+
+<div class="row justify-content-evenly text-white" id="counter">
+    <div class="col-md-3  text-center">
+<p class="bi bi-heart s"></p>
+<h3>Hospital of Heart</h3>
+    </div>
+    <div class="col-md-3  text-center">
+    <p class="bi bi-hospital s"></p>
+    <h3>Best Hospital</h3>
+    </div>
+    <div class="col-md-3  text-center ">
+    <p class="bi bi-eyedropper s"></p>
+    <h3>Eye dropper</h3>
+    </div>
+</div>
+
+<!-- blog -->
+
+<div class="row justify-content-evenly" id="blog">
+    <div class="col-12 text-center">
+        <h1 class="artical-titles blog-title">Recent Posts</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente suscipit dolore corrupti, delectus excepturi atque,<br> eveniet commodi ut beatae saepe provident ipsam voluptatum qui est quibusdam quos<br> voluptas voluptatem.</p>
+    </div>
+<div class="col-md-3 mt-5">
+    <img src="/doctor_1196-269.avif" class="img-fluid">
+    <div class="artical-details">
+        <h4 class="artical-titles">Lover of animals</h4>
+        <p class="artical-date">May-26-2023</p>
+        <p class="article-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias explicabo eveniet
+            quibusdam atque officia
+            exercitationem assumenda. Facere, sunt fugit. Neque velit, doloribus iure quibusdam aperiam placeat
+            aspernatur et facilis sapiente.</p>
+        <p><a href="#" class="article-link">Read More+</a></p>
+    </div>
+</div>
+    
+<div class="col-md-3 mt-5" >
+    <img src="/doctor_1196-269.avif" class="img-fluid">
+    <div class="artical-details">
+        <h4 class="artical-titles">Lover of animals</h4>
+        <p class="artical-date" >May-26-2023</p>
+        <p class="article-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias explicabo eveniet quibusdam atque officia
+            exercitationem assumenda. Facere, sunt fugit. Neque velit, doloribus iure quibusdam aperiam placeat
+            aspernatur et facilis sapiente.</p>
+        <p><a href="#" class="article-link">Read More+</a></p>
+    </div>
+</div>
+
+    <div class="col-md-3 mt-5">
+        <img src="/doctor_1196-269.avif" class="img-fluid">
+        <div class="artical-details">
+            <h4 class="artical-titles">Lover of animals</h4>
+            <p class="artical-date">May-26-2023</p>
+            <p class="article-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias explicabo eveniet
+                quibusdam atque officia
+                exercitationem assumenda. Facere, sunt fugit. Neque velit, doloribus iure quibusdam aperiam placeat
+                aspernatur et facilis sapiente.</p>
+            <p><a href="#" class="article-link">Read More+</a></p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- contact -->
+
+<div class="row pt-5 pb-5 justify-content-evenly" style="background-color: rgb(211, 211, 211);">
+    <div class="col-md-5 mt-5" >
+        <h5 class="mb-3">Contact-form</h5>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="Name">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</div>
+<div class="col-md-5 mt-5">
+    <h5 class="mb-4">Address</h5>
+    <p>AT : post indora DISTRICT , District : Nagpur ,
+        Pincode : 441106 , State : MAharashtra <br></br>
+        <i class="bi bi-phone-fill"></i>:7709699260</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.1344537784166!2d79.49732242396182!3d21.3057029282115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2b31bbc2f200a7%3A0x43663b1043f3c620!2sIndora%2C%20Maharashtra%20441106!5e0!3m2!1sen!2sin!4v1684926380320!5m2!1sen!2sin"
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+<!-- faq -->
+
+<div class="row pt-5 pb-5 justify-content-evenly">
+<div class="col-md-10" >
+<h3 class="text-center">FAQ</h3>
+<div class="accordion accordion-flush border" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- footer -->
+
+<div class="row justify-content-evenly text-white text-end" id="footer">
+    <div class="col-md-2 pt-3 pb-3">
+<h4>ABOUT</h4>
+<a href="" class="text-decoration-none text-white">History</a><br>
+<a href="" class="text-decoration-none text-white">Our Team</a><br>
+<a href="" class="text-decoration-none text-white">Brand Guidelines</a><br>
+<a href="" class="text-decoration-none text-white">Terms & Conditions</a><br>
+<a href="" class="text-decoration-none text-white">Privacy Policy</a><br>
+    </div>
+        <div class="col-md-2 pt-3 pb-3">
+        <h4>SERVICES</h4>
+        <a href="" class="text-decoration-none text-white">How to order</a><br>
+        <a href="" class="text-decoration-none text-white">Our product</a><br>
+        <a href="" class="text-decoration-none text-white">Order Status</a><br>
+        <a href="" class="text-decoration-none text-white">Promo</a><br>
+        <a href="" class="text-decoration-none text-white">Payment Method</a><br>
+        </div>
+            <div class="col-md-2 pt-3 pb-3">
+            <h3>Title Here</h3>
+            <p>Lorem ipsum dolor, sit amet </p>
+            <form id="footer-form">
+                <input type="text" id="footer-search-box">
+                <button type="submit" id="footer-search-submit" ><i class="bi bi-cursor-fill"></i></button>
+                <br>
+                <i class="bi bi-instagram social-icon"></i>    <i class="bi bi-facebook social-icon"></i>    <i class="bi bi-whatsapp social-icon"></i>
+            </form> 
+            </div>
+</div>
+
+  <!-- container fluid -->
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
